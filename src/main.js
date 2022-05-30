@@ -5,7 +5,9 @@ import vuetify from './plugins/vuetify'
 import * as VueAos from 'vue-aos'
 import 'animate.css'
 import { ValidationProvider } from 'vee-validate'
+import Vuelidate from 'vuelidate'
 
+Vue.use(Vuelidate)
 Vue.use(VueAos)
 Vue.config.productionTip = false
 Vue.component('ValidationProvider', ValidationProvider)

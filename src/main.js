@@ -6,7 +6,10 @@ import * as VueAos from 'vue-aos'
 import 'animate.css'
 import { ValidationProvider } from 'vee-validate'
 import Vuelidate from 'vuelidate'
-
+import VueMoment from 'vue-moment'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+Vue.use(VueMoment)
 Vue.use(Vuelidate)
 Vue.use(VueAos)
 Vue.config.productionTip = false

@@ -5,7 +5,7 @@
         <v-col cols="12" md="4">
           <v-card
             v-vue-aos="{ animationClass: 'animate__fadeIn animate__animated' }"
-            width="500"
+            width="450"
             height="400"
             class="background"
             elevation="4"
@@ -26,7 +26,7 @@
                 >
                   <v-text-field
                     v-model="email"
-                    class="mx-12"
+                    class="mx-12 my-6"
                     :error-messages="errors"
                     label="Email"
                     required
@@ -43,7 +43,7 @@
                   <v-text-field
                     v-model="password"
                     color="#000000"
-                    class="mx-12"
+                    class="mx-12 my-6"
                     type="password"
                     :rules="passwordRules"
                     :error-messages="errors"
@@ -52,18 +52,6 @@
                     @input="$v.password.$touch()"
                     @blur="$v.password.$touch()"
                   />
-                </validation-provider>
-                <validation-provider>
-                  <v-select
-                    class="mx-12"
-                    v-model="select"
-                    :items="items"
-                    :error-messages="selectErrors"
-                    label="login as"
-                    required
-                    @change="$v.select.$touch()"
-                    @blur="$v.select.$touch()"
-                  ></v-select>
                 </validation-provider>
                 <v-row justify="center">
                 <v-btn
@@ -95,13 +83,6 @@
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
-
-                <!-- <v-btn
-                  class="teal accent-4 rounded-5 white--text my-9"
-                  @click="clear"
-                >
-                  clear
-                </v-btn> -->
               </form>
             </validation-observer>
           </v-card>

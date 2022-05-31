@@ -8,7 +8,7 @@
               animationClass: 'animate__fadeIn animate__animated',
             }"
             width="500"
-            height="550"
+            height="500"
             class="background"
             elevation="5"
             ><br />
@@ -68,27 +68,13 @@
                     @blur="$v.confirmPassword.$touch()"
                   ></v-text-field>
                 </validation-provider>
+                 <v-row justify="center">
                 <v-radio-group v-model="row" class="mx-12" row>
                   Gender:
                   <v-radio label="male" value="male" class="ml-5"></v-radio>
                   <v-radio label="female" value="female" class="ml-3"></v-radio>
                 </v-radio-group>
-                <v-row justify="center">
-                  <v-checkbox
-                    label="company account"
-                    value="company account"
-                    v-model="checked"
-                  ></v-checkbox>
-                  <!-- UPLOAD FILE OR IMAGE -->
-                  <v-btn
-                    class="white--text grey darken-2 ml-7 mt-5"
-                    small
-                    :disabled="!checked"
-                  >
-                    <v-icon class="mr-1"> mdi-cloud-upload </v-icon>
-                    Upload
-                  </v-btn>
-                </v-row>
+                 </v-row>
                 <v-row justify="center">
                   <v-btn
                     justify="left"

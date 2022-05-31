@@ -6,20 +6,29 @@
       v-vue-aos="{ animationClass: 'animate__fadeIn animate__animated' }"
     >
       <v-col class="text-left justify-start" cols="7" sm="6">
-        <v-container class="ml-6">
-          <h2
+        <v-container class="ml-9">
+          <p
             class="
-              text-h2 text-left
-              font-weight-normal
+              text-h2 text-left teal--text
+              font-weight-regular
               ml-16
               mt-16
               align-center
               justify-center
             "
           >
-            Choose your road <br />
-            from here !
-          </h2>
+            We Grow Together
+          </p>
+          <p class="
+             text-h4 text-left
+             font-weight-light
+              ml-16
+              mt-9
+              align-center
+              justify-center
+            ">
+            social network for mangement careers
+          </p>
           <!-- <v-icon large color="teal accent-4 "> mdi-magnify </v-icon>        -->
           <v-textarea
             class="justify-left mt-16 ml-15 mr-16"
@@ -35,8 +44,8 @@
         </v-container>
       </v-col>
       <v-col cols="6">
-        <v-container class="mr-2">
-          <v-img class="mr-1" src="../assets/jobb.png" height="400" width="500">
+        <v-container >
+          <v-img src="../assets/9814.jpg" height="400" width="550">
           </v-img>
         </v-container>
       </v-col>
